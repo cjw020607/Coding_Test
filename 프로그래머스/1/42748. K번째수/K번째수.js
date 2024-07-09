@@ -3,5 +3,4 @@ function solution(array, commands) {
         acc.push(array.slice(i-1,j).sort((a,b)=>a-b)[k-1])
         return acc;
 },[]);
-    return answer;
 }
