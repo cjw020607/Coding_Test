@@ -1,4 +1,3 @@
-from itertools import combinations
 def solution(nums):
     a=len(set(nums))
     b=len(nums)//2
