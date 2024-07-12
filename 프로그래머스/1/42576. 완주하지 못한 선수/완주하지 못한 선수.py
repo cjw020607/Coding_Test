@@ -1,12 +1,13 @@
 from collections import Counter
+# def solution(participant, completion):
+#     a=Counter(participant)
+#     b=Counter(completion)
+#     for p in participant:
+#         if a[p]!=b[p]:
+#             return p
+
 def solution(participant, completion):
-    a=Counter(participant)
-    b=Counter(completion)
-    for p in participant:
-        if a[p]!=b[p]:
-            return p
-
-
+    return list(Counter(participant) -Counter(completion))[0]
 
 # def solution(participant, completion):
 #     a=list(set(participant)-set(completion))
