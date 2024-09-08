@@ -1,7 +1,10 @@
 function solution(n) {
-    let list=[0,1]
-    for(let i=2;i<n+1;i++){
-        list.push((list[i-2]+list[i-1])%1234567)
+    let a=0;
+    let b=1;
+    for(let i=0;i<n;i++){
+        let tmp=(a+b)%1234567;
+        a=b;
+        b=tmp;
     }
-    return list[n];
+    return a%1234567;
 }
