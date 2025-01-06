@@ -3,8 +3,6 @@ def solution(dirs):
     current=(0,0)
     tmp=(0,0)
     for i in range(len(dirs)):
-        # if tmp[0]==5 or tmp[1]==5 or tmp[0]==-5 or tmp[1]==-5:
-        #     continue;
         if dirs[i]=="U":
             tmp=(current[0],current[1]+1)
         elif dirs[i]=="D":
