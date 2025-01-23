@@ -23,7 +23,7 @@ while(queue.length>0){
   }
  }
 }
-(N===0&&K===0)?console.log(0):console.log(result)
+console.log(result)
 
 
 
