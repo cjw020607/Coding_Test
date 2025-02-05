@@ -1,3 +1,4 @@
 function solution(sizes) {
-    return Math.max(...sizes.map(item=>Math.min(...item)))*Math.max(...sizes.map(item=>Math.max(...item)));
+    sizes.forEach(item=>item.sort((a,b)=>a-b));
+    return Math.max(...sizes.map(item=>item[0]))*Math.max(...sizes.map(item=>item[1]));
 }
