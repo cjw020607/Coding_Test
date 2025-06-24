@@ -10,7 +10,6 @@ let visited=Array.from({length:N},()=>new Array(M).fill(0));
 
 const bfs=(i,j,d)=>{
     let way=[[i,j,d]];
-    visited[i][j]=1;
     while(way.length>0){
         let [y,x,dist]=way.shift();
         let direction=[[1,0],[-1,0],[0,1],[0,-1],[1,1],[-1,-1],[1,-1],[-1,1]];
